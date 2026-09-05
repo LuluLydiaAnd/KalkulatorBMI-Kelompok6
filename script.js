@@ -10,4 +10,22 @@ tombol.addEventListener('click' , () => {
         hasilElement.style.color = 'red';
         return; 
     }
+
+    let tinggi_M = tinggi_Cm / 100;
+    let bmi = beratbadan / (tinggi_M * tinggi_M);
+    let bmiRounded = Math.round(bmi * 10) / 10;
+
+    let kategori = '';
+    if (bmiRounded < 18.5) {
+        kategori = 'Kurus';
+    } else if (bmiRounded < 25) {
+        kategori = 'Normal';
+    } else if (bmiRounded < 30) {
+        kategori = 'Gemuk';
+    } else {
+    kategori = 'Obesitas';
+    }
+
+    hasilElement.innerHTML = `BMI kamu: <b>${bmiRounded}</b> <br> Kategori:${kategori}`;
+    hasilElement.style.color = 'black';
 } ) 
