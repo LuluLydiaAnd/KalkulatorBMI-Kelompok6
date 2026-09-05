@@ -11,6 +11,28 @@ header{
     background-color: aqua;
 }
 
+.kotak {
+    border: 2px solid black;
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.input-WH {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80%;
+}
+
+#boxHasil {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
 footer{
     padding: 20px;
     text-align: center;
